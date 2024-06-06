@@ -12,7 +12,11 @@
 
 let money = prompt("Enter the amount of money")
 money = Number(money)
-let tip = prompt("Enter the tip percentage")
-tip = Number(tip)
-let total = money + (money * tip / 100)
-alert(`The total amount you need to pay is ${total}`)
+let months = prompt("How many months")
+months = Number(months)
+let  tip = 20
+let total = (money * tip) / 100
+let totalMoney = money + total
+let monthly = totalMoney / months
+alert(monthly)
+
